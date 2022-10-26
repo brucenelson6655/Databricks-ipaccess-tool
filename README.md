@@ -48,7 +48,7 @@ JQ Mode
 100     3  100     3    0     0      6      0 --:--:-- --:--:-- --:--:--     6
 {}
 ```
-You will notice a new netrc file adb-6499070522450209.netrc thats named for your Databricks workspace. 
+You will notice, for example, a new netrc file adb-6499070522450209.netrc thats named for your Databricks workspace. 
 
 ### Enabling IP Access lists 
 Before we can work with IP access lists we need to turn this feature on. Run ipacltool with the -s flag to show status
@@ -67,7 +67,7 @@ JQ Mode
   "enableIpAccessLists": null
 }
 ```
-IP access lists will return __null__ if its never been enabled. The -z flag turnes on or off IP access lists. You can combine the -z flag with the -s flag to show status as well. 
+IP access lists will return __null__ if its never been enabled. The -z flag turns IP access lists on or off. You can combine the -z flag with the -s flag to show status as well. 
 
 #### Turn "ON" IP Access Lists
 ```
