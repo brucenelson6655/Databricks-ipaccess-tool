@@ -285,7 +285,7 @@ login token
 password ${pat_token}" > $netrcfile
 else
   echo "Need to create an Netrc file interface"
-  echo "Rerun with -P <PAT Toeken option>"
+  echo "Rerun with -P <PAT Token option>"
   exit
 fi
 
