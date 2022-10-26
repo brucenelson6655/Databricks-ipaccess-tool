@@ -121,7 +121,7 @@ curl --netrc-file ./adb-6499070522450209.netrc -X GET https://adb-64990705224502
 ---
 ## Commands (ADD UPDATE DELETE REPLACE LIST)
 ### IP lists and Service Tags 
-For ADD, REPLACE and UPDATE, you can supply either an IP list in a file (-f filename) or an Azure Service Tag (-T Service Tag ID/Name). 
+For ADD, REPLACE and UPDATE, you can supply either an IP list in a file (-f filename) or an Azure Service Tag (-T Service Tag ID/Name). A sample file has been included in this repo mylist1.sample.
 #### IP list example
 ```"70.93.162.189/32",
 "44.230.222.179/32",
