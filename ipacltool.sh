@@ -155,6 +155,8 @@ usage() {
         echo "-e Enable ACL"
         echo "-x No Execute - for testing, returns command listing"
         echo "-s IP Access List Status"
+        echo "-z <ON or OFF> turns on or off the IP access list feature."
+        echo "   Status shown by the -s flag"
         exit
 }
 
@@ -183,7 +185,7 @@ aclenabled="true"
 
 # echo "IP Access List ID : " $mylistid
 
-optstring=":hH:P:Ddec:T:A:I:t:f:xs"
+optstring=":hH:P:Ddec:T:A:I:t:f:xsz:"
 
 if [ $# -eq 0 ] ; then 
   usage
@@ -244,6 +246,16 @@ while getopts ${optstring} arg; do
     P)
       echo "Pat Token"
       pat_token="${OPTARG}"
+      ;;
+    z)
+      action="${OPTARG}"
+      if [ $action = "ON" ] ; then 
+        ipaclon
+      elif [ $action = "OFF" ] ; then 
+        ipacloff
+      else
+         echo " -z needs ON or OFF "
+      fi
       ;;
     x)
       echo "no exec enabled"
