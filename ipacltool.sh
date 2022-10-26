@@ -149,7 +149,7 @@ usage() {
         echo "-A <ACLNAME>"
         echo "-I <ACL ID> needed for update of acl name"
         echo "-t <ACL Type>"
-        echo "   ALLOW DENY"
+        echo "   ALLOW BLOCK"
         echo "-T Azure Service Tag"
         echo "-d Disable ACL"
         echo "-e Enable ACL"
@@ -169,7 +169,6 @@ usage() {
 
 
 commandline="LIST"
-adbhost="https://adb-7804143827420294.14.azuredatabricks.net"
 ipacltype="ALLOW"
 aclenabled="true"
 
