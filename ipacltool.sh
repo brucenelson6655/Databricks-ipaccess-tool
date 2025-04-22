@@ -4,7 +4,7 @@ echo $adbhost
 echo $commandline
 
 noexecmode=0
-service_tag_file="ServiceTags_Public_20240715.json"
+service_tag_file="erviceTags_Public_20250414.json"
 
 
 execcurl() {
